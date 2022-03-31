@@ -29,18 +29,22 @@
       crossorigin=""
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
-    <script src="https://unpkg.com/leaflet.fullscreen@1.5.0/Control.FullScreen.js"></script>
     <script src="scripts/leaflet-search.js"></script>
     <script src="scripts/L.Control.Sidebar.js"></script>
 
     <link rel="stylesheet" href="styles/style.css" />
-    <script src="scripts/zip_codes_OR_WA.js"></script>
-    <script src="scripts/counties_OR_WA.js"></script>
-    <script src="scripts/states_OR_WA.js"></script>
+
+    <script src="scripts/states.js"></script>
+    <script src="scripts/counties.js"></script>
+    <script src="scripts/zip_codes.js"></script>
   </head>
 
   <body>
-    <div id="map"></div>
+    <div id="container-maps">
+      <div id="map-contiguous"></div>
+      <div id="map-Hawaii"></div>
+      <div id="map-Alaska"></div>
+    </div>
     <div id="table-container">
       <div id="table-data"></div>
     </div>
